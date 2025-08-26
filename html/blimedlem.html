@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Bli medlem</title>
+</head>
+
+<body>
+  <script src="../JavaScript/header.js"></script>
+
+<div class="design_sider">
+  <div id="hoveddivBlimed">
+    <h1 id="h1blimed">Bli med på revy!</h1>
+    <div id="underline"></div>
+  </div>
+  <p id="blimed">
+    Hos GRT blir alle medlemmer tatt opp som generelle medlemmer, og man er
+    medlem til man melder seg ut av laget. Likevel er det ulike ting man kan
+    finne på. For høstens revy har vi følgende undergrupper!
+  </p>
+
+  <div class="flex-container container-position">
+    <div><img class="imgblimed" src="../img/skuespill.jpg" alt="skuespill"></div>
+    <div>
+      <h2 class="blimedh2" id="Skuespill">Skuespill</h2>
+      <p class="undergruppetekst">
+        Skuespillerne er de som spiller ut, synger og danser til det skribentene
+        og bandet produserer til dem. Dette er en gjeng med sprudlende
+        teaterentusiaster som jobber iherdig med å lære seg manus, sang og
+        koreografi til den store urpremieren.
+      </p>
+    </div>
+  </div>
+
+  <div class=flex-container>
+    <div><img class="imgblimed" src="../img/band.jpg" alt="band"></div>
+    <div>
+      <h2 class="blimedh2" id="Band">Band</h2>
+      <p class="undergruppetekst">
+        GRT stiller ikke bare med egenkomponert musikk på revyen, men også med
+        et helt eget revyband. Bandet består av en god blanding av ulike
+        instrumenter, og det er de som sørger for at showet får en fin flyt fra
+        sketsj til sketsj. Samtidig får alle musikalske nummer ekstra god
+        stemning når det er et liveband på scenen fyllt med flinke musikere.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="flex-container container-position">
+    <div><img class="imgblimed" src="../img/skribent.jpg" alt="skribent"></div>
+    <div>
+      <h2 class="blimedh2" id="skribent">Skribent</h2>
+      <p class="undergruppetekst">
+        Skribentene bygger opp revyen fra bunnen av ved å produsere sketsjer,
+        sangtekster og andre morsomme idéer som kan dukke opp på scenen. Som
+        skribent kan man også sette sitt personlige, humoristiske preg på
+        revyen.
+      </p>
+    </div>
+  </div>
+
+  <div class=flex-container>
+    <div><img class="imgblimed" src="../img/PR.jpg" alt="PR"></div>
+    <div>
+      <h2 class="blimedh2" id="pr">PR</h2>
+      <p class="undergruppetekst">
+        PR-gruppa gjør masse spennende ting, som f.eks. sosiale medier som
+        Facebook, Tiktok og Instagram. De gjennomfører markedsføringen av revyen
+        på mange forskjellige plattformer og på mange forskjellige kreative måter.
+        Denne gruppen er for de som syns det er gøy å holde på med bl.a. film og
+        foto, og vil bidra på prosjekter som redigering av revyen, filmskjetsjer,
+        o.l.
+      </p>
+    </div>
+  </div>
+
+  <div class="flex-container container-position">
+    <div><img class="imgblimed" src="../img/kostyme.jpg" alt="Rekvisitt og kostyme"></div>
+    <div>
+      <h2 class="blimedh2" id="rekogkos">Rekvisitt og kostyme</h2>
+      <p class="undergruppetekst">
+        Dette er gruppen for de som liker å skape og jobbe kreativt. Her får man
+        muligheten til å forme revyens estetiske uttrykk gjennom å lage og designe
+        kostymer, rekvisitter og annet som skal ut på scenen.
+      </p>
+    </div>
+  </div>
+
+  <div class=flex-container>
+    <div><img class="imgblimed" src="../img/kos.jpg" alt="kos"></div>
+    <div>
+      <h2 class="blimedh2" id="kos">KOS</h2>
+      <p class="undergruppetekst">
+        Kosegruppa er ansvarlig for det sosiale miljøet i revyen. Gjennom å lage
+        de beste pausene med kaffe, kake og kos, og sosiale arrangementer for hele
+        gjengen er man altså med på å tilføre den viktige prikken-over-i-en som
+        gjør det ekstra bra å være med i revyen.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="form">
+    <h2 id="kontaktoss">Søk medlemsskap!</h2>
+
+    <form action="action_page.php">
+
+      <div class="form-group">
+        <label class="labelform" for="name">Navn:</label>
+        <input class="box" type="text" id="name" name="firstname" placeholder="Navn">
+      </div>
+
+      <div class="form-group">
+        <label class="labelform" for="email">E-post:</label>
+        <input class="box" type="email" id="email" name="email" placeholder="epost@epost.no">
+      </div>
+
+      <div class="form-group">
+        <label class="labelform" for="melding">Melding:</label>
+        <textarea id="melding" name="melding" placeholder="Skriv her ..."></textarea>
+      </div>
+
+      <input type="button" value="SEND" id="submit" onclick="buttonClick()">
+
+    </form>
+  </div>
+</div>
+
+
+  <div id="footerTarget"></div>
+  <script src="../JavaScript/footer.js"></script>
+  <script src="../JavaScript/blimedlem.js"></script>
+</body>
+
+</html>

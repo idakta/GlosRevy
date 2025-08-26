@@ -1,0 +1,63 @@
+body {
+    margin: auto;
+    max-width: 600px;
+    background-color: beige;
+    margin-bottom: 20px;
+}
+
+header {
+    text-align: center;
+}
+.header {
+    text-align: center;
+}
+
+.image {
+    width: 200px;
+    height: auto;
+}
+
+section {
+    text-overflow: ellipsis;
+    max-width: 100%;
+    border-style: double;
+    border-color: black;
+    background-color: whitesmoke;
+    padding: 0px 10px 5px 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+img {
+    width: 500px;
+    height: 600px;
+}
+
+.P3 {
+    margin-top: 15px;
+}
+
+.FormLink {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+.FormLink:hover {
+    color: rgb(0, 255, 42);
+}
+
+.tilbakemeldinger {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.endringer {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px
+}

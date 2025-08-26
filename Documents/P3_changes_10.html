@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="nn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="P1.css">
+</head>
+
+<body>
+  <!-- 1. Header -->
+  <header>
+    <h1>P3: Design changes</h1>
+    <p>Malin, Agnes, Ingrid, Markus, Ida K og Ida M</p>
+    <p><b>21. november 2022</b></p>
+    <a href="https://folk.ntnu.no/idakta/assignment-1/html/homepage.html" target="_blank">Lenke til nettsiden</a>
+  </header>
+
+  <!-- 2. Administrative details -->
+  <section class="P3">
+    <h2>Klient</h2>
+    <p><b>Gløshaugen Revy- og Teaterlag</b></p>
+    <p>
+      <b>Kontaktperson:</b> <br>
+      Jenny Marie Ragnhild Andersen (leder)<br>
+      jmander@stud.ntnu.no
+    </p>
+  </section>
+  <!-- 3. changes-->
+  <section class="P3">
+    <h2>Endringene vi har gjort</h2>
+
+    <p>
+      Vår originale plan var å ha 4 sider med bestemte design. Vi beholdt antall sider, men endte med å endre små deler
+      av design
+      av ulike årsaker. De ulike endringene og hvorfor de ble gjort vil vi komme tilbake til nedenfor.
+    </p>
+
+    <p><b><i>Header.js og footer.js tilsvarer delene i html hvor koden ville vært skrevet</i></b></p>
+
+    <dl>
+      <dt class="endringer">header.js:</dt>
+      <dd>Vi har beskjært bildet i topp og bunn, slik at bildet ikke tar opp halve siden. Dette skal gi brukeren ett
+        bedre
+        inntryk og siden vil få en "luftigere" layout. Dropdownmenyen til navbaren har ikke noe border-radius, rett og
+        slett fordi det så bedre ut med spisse hjørner.
+      </dd>
+
+      <dd>
+        <i>Mobil (vidde mindre enn 900px): </i><br>
+        Her ønsker vi å spesifisere at det ikke skal være mulig å trykke på bli medlem for å få opp dropdownmenyen. Når
+        du trykker på bli medlem, vil du bli lenket til siden.
+      </dd>
+
+      <dt class="endringer">homepage.html:</dt>
+      <dd>
+        <i>PC: </i><br>
+        Bildet under navbar har blitt byttet med en video, for å skape en større visuell spenning, variasjon og et
+        profesjonelt uttrykk. Originalt skulle bildene under "viktige datoer" være tre kolonner, men dette har vi
+        endret. Vi bruker nå slipeshow, som vil legge mer fokus på vært bilde/dato.
+      </dd>
+      <dd>
+        <i>Mobil (vidde mindre enn 900px): </i><br>
+        Bildet under navbar har blitt byttet med et stillbilde som ligner på videoen. Vi har latt være å bruke videoen,
+        fordi videoer krever mye nett og strøm for å kjøre på mobil. Bildene under "viktige datoer" har, på samme måte
+        som pc-versjon,
+        blitt byttet til slideshow. På mobil er alt generelt mindre, så det vil hjelpe å bare ha en dato å fokusere på
+        om gangen.
+      </dd>
+
+      <dt class="endringer">omoss.html:</dt>
+      <dd>Denne siden er veldig lik som originalen i figma. Bildet i teksten er byttet til et mer relevant bilde, som
+        passer bedre inn
+        med innholdet i teksten. Nederst på siden har vi, istedenfor det store bildet, lagt inn et slideshow.
+        Slideshowet bytter bilde etter 5 sekunder
+        og sirkulerer. Dette gjør at burkerne kan følge med på bildene også innimellom de leser. Bildebyttet gir siden
+        noe liv, da resten av siden
+        er ganske enkel og stillestående.
+      </dd>
+      <dd>
+        <i>Mobil (vidde mindre enn 900px): </i><br>
+        Mobilversjonen er veldig lik, men det er viktig å spesifisere at vi har valgt å droppe bildet midt i teksten.
+        Dette har vi gjort,
+        da bildet hadde blitt veldig lite, og var krongelte å tilpasse når siden misket i størrelse.
+      </dd>
+
+      <dt class="endringer">styret.html:</dt>
+      <dd>Det sittende styret er gjort smalere i pc-versjon, slik at det er lettere å se hvem som har de ulike rollene.
+        Dette skaper
+        også endringer i layout, slik at ikke alle elementer på siden har samme bredde.</dd>
+
+      <dt class="endringer">blimedlem.html:</dt>
+      <dd>Vi har fjernet linja under underoverskriftene, slik at det blir mer luft på siden. Kontaktskjemaet er ikke
+        likt som i figma, siden vi
+        lagde et veldig enkelt forslag til utseende på kontaktskjemaet. Etter litt tid i css, har vi kommet frem ti len
+        layout som vi mener er
+        mer leselig og brukervennlig.
+      </dd>
+      <dd>
+        <i>Mobil (vidde mindre enn 900px): </i><br>
+        Vi opprettet felxboxer, slik at det var lettere å flytte delene på siden rundt. Dette kom til vår fordel, da vi
+        bestemte oss for å
+        ha informasjonen under hverandre i mobil. Dette gjorde vi fordi bildene og teksten ble så liten i
+        mobilversjonen. Det var bedre visuelt
+        og mer oversiktlgi å ha elementer under hverandre.
+      </dd>
+
+      <dt class="endringer">Footer:</dt>
+      <dd>Vi endret fargen på iconene til svart, slik at de står mer i stil med resten av siden. Det skaper en synlig
+        rød tråd og balanse. </dd>
+
+      <dt class="endringer">Endringer på 1. krav JS:</dt>
+      <dd>Vi skrev først koden i header.js, men da måtte man trykke på menyen for å få opp dropdownmenyen. Da vi skulle
+        gjøre om til hover,gjorde vi endringer i css,
+        som gjør at vi nå bruker js på samme måte. </dd>
+
+      <dt class="endringer">Endringer av 2.krav JS:</dt>
+      <dd>Agnes endte med å lage to ulike slideshows ved bruk av JS, en i homepage.js og en i omoss.js. Originalt ønsket
+        vi et bildeshow som byttet
+        etter noen sekunder i en tilfeldig rekkefølge. Dette har vi gått litt vekk fra
+      </dd>
+      <dd>
+        <i>Slideshowet i homepage.html: </i><br>
+        Slideshowet på den første siden går i en bestemt rekekfølge, og bytter ikke slide av seg selv. Her har vi lagt
+        inn muligheten til å trykke seg
+        til venstre og høyre, samtidig som man kan se hvor i sekvensen man er. Dette gir brukeren flere muligheter, og
+        gir en oversikt/kontroll over
+        hvor man er på siden.
+      </dd>
+      <dd>
+        <i>Slideshowet i omoss.html: </i><br>
+        Slideshowet i omoss består også av bilder i en bestemt rekkefølge, som gir en oversikt over hvor mange bilder
+        det er. Under bildene har vi en
+        miniatyrversjon av bildene, slik at man kan trykke seg inn på enkelte bilder. Bildene her byttes også i en
+        frekvens.
+      </dd>
+
+      <dt class="endringer">Endringer av 3.krav JS:</dt>
+      <dd>Dette kravet var noe uspesifisert og dårlig forklart. Det vi mente: <br>
+        "Implementere i JS slik at man får en 'bekreftelse' på at mail er sendt.</dd>
+      <dd>Vi endte med å lage en funksjon i blimedlem.js som viser en melding når man trykker send. For å gjøre det
+        klart at 'meldingen er sendt',
+        fjernes også skrift i inputs når knappen trykkes på. </dd>
+
+      <dt class="endringer">Endringer av 4.krav JS:</dt>
+      <dd>Vi valgte å droppe nedtellingen, da det ikke var noe sted den passet inn. Nedtellingen ville være vanskelig å
+        ha med, da det heller
+        ikke er bestemt noe neste prosjekt i GRT.</dd>
+
+      <dt class="endringer">Endringer av planlagt CSS:</dt>
+      <dd>Bakgrunnsfarge: #262626 </dd>
+      <dd>Navbar & footer - farge: #d9a036 </dd>
+      <dd>Skriftfarge: #FFEDCC</dd>
+      <dd>????</dd>
+
+      <dt class="endringer">Endringer av planlagt JS:</dt>
+      <dd>
+        Fjernet disse JS filene:
+        <ul>
+          <li>rollOverMenu.js</li>
+          <li>randomimages.js</li>
+          <li>countdown.js</li>
+          <li>contactus</li>
+        </ul>
+      </dd>
+      <dd>
+        La til disse JS filene:
+        <ul>
+          <li>blimedlem.js</li>
+          <li>footer.js</li>
+          <li>header.js</li>
+          <li>homepage.js</li>
+          <li>omoss.js</li>
+        </ul>
+      </dd>
+
+    </dl>
+  </section>
+  <br>
+
+  <section class="p3">
+    <h2>Updated Organizational Scheme</h2>
+    <p>Oppdatert liste over filer og mapper:</p>
+    <ul>
+      <li>
+        html/
+        <ul>
+          <li>homepage.html</li>
+          <li>omoss.html</li>
+          <li>blimed.html</li>
+          <li>styret.html</li>
+        </ul>
+      </li>
+
+      <li>
+        images/
+        <ul>
+          <li>AJ107970.jpg</li>
+          <li>band.jpg</li>
+          <li>blimedlem.phone.png</li>
+          <li>blimedlem.png</li>
+          <li>facebook.png</li>
+          <li>grt_banner.png</li>
+          <li>GRT-Banner1.jpg</li>
+          <li>grtbanner_beskjært.jpg</li>
+          <li>Homepage.phone.png</li>
+          <li>IMG_6391.jpg</li>
+          <li>IMG_7218.jpg</li>
+          <li>instagram.jpg</li>
+          <li>kos.jpg</li>
+          <li>kostyme.jpg</li>
+          <li>Logo_video.mp4</li>
+          <li>LogoGRT-ritkig.png</li>
+          <li>LogoGRT.png</li>
+          <li>MENUICON.png</li>
+          <li>meny.png</li>
+          <li>navigation.png</li>
+          <li>omoss.phone.png</li>
+          <li>Omoss.png</li>
+          <li>omOssBilde.jpg</li>
+          <li>PR.jpg</li>
+          <li>skribent.jpg</li>
+          <li>skuespill.jpg</li>
+          <li>sokrevy.png</li>
+          <li>styrebilde.png</li>
+          <li>styret.phone.png</li>
+          <li>Styret.png</li>
+          <li>temaslipp.png</li>
+          <li>Temaslipp2.jpg</li>
+          <li>tik-tok.png</li>
+        </ul>
+      </li>
+      <li>
+        scripts/
+        <ul>
+          <li>footer.js</li>
+          <li>header.js</li>
+          <li>homepage.js</li>
+          <li>omoss.js</li>
+        </ul>
+      </li>
+      <li>style.css</li>
+    </ul>
+
+    <table>
+      <tr>
+        <th>Filename</th>
+        <th>Description</th>
+        <th>In charge</th>
+      </tr>
+      <tr>
+        <td>Homepage.html </td>
+        <td>The homepage of the website, with news and other information</td>
+        <td>Agnes og Markus</td>
+      </tr>
+      <tr>
+        <td>omoss.html</td>
+        <td>Information about GRT and what they do</td>
+        <td>Ingrid</td>
+      </tr>
+      <tr>
+        <td>blimedlem.html</td>
+        <td>Information about the different gruop you can join</td>
+        <td>2xIda</td>
+      </tr>
+      <tr>
+        <td>styret.html</td>
+        <td>About the board</td>
+        <td>Malin</td>
+      </tr>
+      <tr>
+        <td>Header</td>
+        <td>A header for all the pages with the GRT logo</td>
+        <td>Malin</td>
+      </tr>
+      <tr>
+        <td>Footer</td>
+        <td>
+          Footer with contact information and links to instagram, facebook and
+          tiktok
+        </td>
+        <td>Malin og Ida M</td>
+      </tr>
+      <tr>
+        <td>menu</td>
+        <td>menu under the header with links to the different pages</td>
+        <td>Ida T og Ingrid</td>
+      </tr>
+      <tr>
+        <td>header.js</td>
+        <td>A header with rolldown menu</td>
+        <td>Markus, Ingrid, Ida K og Ida M</td>
+      </tr>
+      <tr>
+        <td>homepage.js</td>
+        <td>Homepage with slideshow</td>
+        <td>Markus og Agnes</td>
+      </tr>
+
+      <tr>
+        <td>omoss.js</td>
+        <td>Omoss page with slideshow</td>
+        <td>Ingrid</td>
+      </tr>
+
+      <tr>
+        <td>blimedlem.js</td>
+        <td>A membership scheme</td>
+        <td>Ingrid</td>
+      </tr>
+
+      <tr>
+        <td>footer.js</td>
+        <td>Links to icons</td>
+        <td>Markus, Ida M og Malin</td>
+      </tr>
+
+      <tr>
+        <td>contactus</td>
+        <td>
+          A contact box where you can send in mail directly from the website
+        </td>
+        <td>Markus</td>
+      </tr>
+      <tr>
+        <td>countdown.js</td>
+        <td>A countdow that shows how long until the performance</td>
+        <td>Markus</td>
+      </tr>
+      <tr>
+        <td>style.css</td>
+        <td>The CSS file containing all styling for the website</td>
+        <td>All</td>
+      </tr>
+      <tr>
+        <td>Final controls</td>
+        <td>Checking over the final result one last time</td>
+        <td>All</td>
+      </tr>
+    </table>
+  </section>
+  <br>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Homepage</title>
+</head>
+
+<body>
+    <script src="../JavaScript/header.js"></script>
+
+
+    <video autoplay loop muted id="video">
+        <source src="../img/Logo_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="homepage1">
+
+
+        <p>
+            Revyen har urpremiere 3.november, og det er få billetter igjen!
+            Ta med venner og kjøp billetter før det er tomt.<br>
+            Ryktene sier at dette blir en syk opplevelse uten like!!
+        </p>
+    </div>
+
+    <div class="viktigdato">
+        <h2>Viktige datoer</h2>
+        <hr>
+
+        <div class="vikdat">
+            <img id="urpremiere" src="../img/temaslipp.png" alt="urpremiere">
+            <div class="textbox">Urpremiere: 3.november</div>
+        </div>
+
+        <div class="vikdat">
+            <img id="temaslipp" src="../img/Temaslipp2.jpg" alt="temaslipp">
+            <div class="textbox">Temaslipp: 22.september</div>
+        </div>
+
+        <div class="vikdat">
+            <img id="sokrevy" src="../img/sokrevy.png" alt="sokrevy">
+            <div class="textbox">Søk revy: 18.september</div>
+        </div>
+
+        <!-- frem/tilbake knapp -->
+        <a class="bak" onclick="addSlides(-1)">&#10094;</a>
+        <a class="frem" onclick="addSlides(1)">&#10095;</a>
+
+    </div>
+    </div>
+    <br>
+
+    <!-- dots -->
+    <div class="dotdiv">
+        <span class="dot" onclick="thisSlide(1)"></span>
+        <span class="dot" onclick="thisSlide(2)"></span>
+        <span class="dot" onclick="thisSlide(3)"></span>
+    </div>
+
+
+
+    <script src="../JavaScript/homepage.js"></script>
+    <div id="footerTarget"></div>
+    <script src="../JavaScript/footer.js"></script>
+</body>
+
+</html>
